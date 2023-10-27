@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main class=" ">
+        <section class="">
+            <div class="container bg-info p-4">
+                <div class="inputs-form mb-3">
+                    <label for="productName">productName:</label>
+                    <input type="text" onkeyup="validationCurd()"  id="productName" class="form-control my-2" placeholder="product Name"> 
+                    <p class="alert alert-danger my-2 py-2 d-none " id="namepattern">special character and numbers not allowed</p>
+    
+                </div>
+                <div class="inputs-form mb-3">
+                    <label for="productprice">productprice:</label>
+                    <input type="number"  onkeyup="validationCurd()" id="productprice" class="form-control my-2 " placeholder="product price" > 
+                    <p class="alert alert-danger my-2 py-2 d-none" id="pricepattern">numbers only</p>
+    
+                </div>
+                <div class="inputs-form mb-3">
+                    <label for="productCategory">productCategory:</label>
+                    <input type="text" id="productCategory" onkeyup="validationCurd()"  class="form-control my-2" placeholder="product Category"> 
+                    <p class="alert alert-danger my-2 py-2 d-none" id="categorypattern">special character and numbers not allowed</p>
+    
+                </div>
+                <div class="inputs-form mb-3">
+                    <label for="productdescribation">productDescribation:</label>
+                    <textarea id="productdescribation" onkeyup="validationCurd()"  class="w-100 form-control my-2" value="" placeholder="product describation"></textarea>
+                    <p class="alert alert-danger my-2 py-2 d-none" id="describationpattern">special character not allowed</p>
+    
+                </div>
+                <button disabled class="btn btn-primary w-100" onclick="addProduct()" id="addbtn" >Add product</button>
+                <button class="btn btn-primary w-100 d-none" onclick="updateProduct()" id="updatebtn">uptade product</button>
+    
+                
+                
+               
+    
+            </section>
+    
+            <section class="">
+                <div class="container">
+                    <input  id="searchInput" oninput="search()" type="text" class="form-control my-3 w-75 mx-auto" placeholder="search...">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>price</th>
+                                <th>category</th>
+                                <th>description</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="databox">
+                            
+                        </tbody>
+                    </table>
+    
+                </div>
+                
+
+                </div>
+               
+           
+
+        </section>
+    </main> 
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html> 
